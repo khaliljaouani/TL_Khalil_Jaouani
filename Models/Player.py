@@ -2,8 +2,8 @@ import json
 import os
 from Models.Model import Model
 
+
 class Player(Model):
-    
     def __init__(self, first_name, last_name, birth_date, national_chess_id):
         """
         Initialise une nouvelle instance de la classe Player avec un ID unique,
@@ -39,15 +39,14 @@ class Player(Model):
                 file.truncate()
                 json.dump(players, file, indent=4)
 
+        def get_players(self):
+            """
+            Charge et retourne la liste des joueurs depuis le fichier players.json.
+            Si le fichier n'existe pas, renvoie un message d'erreur.
 
-    def get_players(self):
-        """
-        Charge et retourne la liste des joueurs depuis le fichier players.json.
-        Si le fichier n'existe pas, renvoie un message d'erreur.
-
-        Returns:
-            list/dict/None: Liste des joueurs si le fichier existe, un message d'erreur sinon.
-        """
+            Returns:
+                list/dict/None: Liste des joueurs si le fichier existe, un message d'erreur sinon.
+            """
         file_path = 'data/players.json'
         if os.path.exists(file_path):
             with open(file_path, 'r') as file:
