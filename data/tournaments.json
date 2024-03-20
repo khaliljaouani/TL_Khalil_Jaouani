@@ -1,1 +1,26 @@
-[]
+[
+    {
+        "id": 1,
+        "name": "LL",
+        "location": "PARIS",
+        "start_date": "29/04/2024",
+        "end_date": "29/05/2024",
+        "rounds": 4,
+        "current_round": 1,
+        "round_list": [],
+        "player_list": [],
+        "description": ""
+    },
+    {
+        "id": 2,
+        "name": "mm",
+        "location": "mm",
+        "start_date": "12/04/2024",
+        "end_date": "12/05/2024",
+        "rounds": 3,
+        "current_round": 1,
+        "round_list": [],
+        "player_list": [],
+        "description": ""
+    }
+]

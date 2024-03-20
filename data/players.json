@@ -1,1 +1,9 @@
-[]
+[
+    {
+        "id": 1,
+        "first_name": "khalil",
+        "last_name": "jaouani",
+        "birth_date": "29/07/1996",
+        "national_chess_id": ""
+    }
+]
